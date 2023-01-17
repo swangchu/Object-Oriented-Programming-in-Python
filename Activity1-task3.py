@@ -1,3 +1,4 @@
+#write a program to handle five clients.
 balance1 = 0
 balance2 = 0
 balance3 = 0
