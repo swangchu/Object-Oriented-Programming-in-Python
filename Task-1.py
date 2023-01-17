@@ -13,18 +13,18 @@ def withdraw(amount):
         balance -= amount
     else:
         print("Insufficient funds.")
+        
 def check_balance():
     global balance
     print("Your current balance is:", balance)
 
 
-
 #First Client transaction 
 deposit(100)
 withdraw(50)
-print(“The bank balance for First client is ”,check_balance()) #must print "Your current balance is: 50"
+check_balance() #must print "Your current balance is: 50"
 
 #Second Client Transaction
 deposit(200)
 withdraw(150)
-print(“The bank balance for Second client is ”,check_balance())  #must print "Your current balance is: 50"
+check_balance()  #must print "Your current balance is: 50"
