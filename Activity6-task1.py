@@ -1,7 +1,6 @@
 class BankAccount:
     def __init__(self, balance):
         self.balance = balance
-
     def deposit(self, amount):
         self.balance += amount
         return self.balance
@@ -31,8 +30,7 @@ print("Withdraw:       3")
 print("Add Interest:   4")
 print("Exit:           5")
 
-operation = True
-while operation == True:
+while True:
     print("----------PLEASE CHOOSE THE OPTIONS---------")
     operation = int(input("Enter operation:")) 
     if operation == 1:
@@ -40,22 +38,14 @@ while operation == True:
     elif operation == 2:
         amount = float(input("Enter deposit amount:"))
         print("Balance:",savings_account.deposit(amount))
-        operation = True
     elif operation == 3:
         amount = float(input("Enter withdraw amount:"))
         print("Balance:",savings_account.withdraw(amount))
-        operation = True
     elif operation == 4:
         print("Balance:",savings_account.add_interest())
-        operation = True
     elif operation == 5:
         print("Thank you for visiting us!")
         break
     else:
         print("Please enter valid options[1-5]")
-        operation = True
-
-
-
-        
-      
+        break
