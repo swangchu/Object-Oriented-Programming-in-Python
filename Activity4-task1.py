@@ -1,11 +1,11 @@
 class Area:
     def compute_area(self, shapes,x = None, y = None):
         if shapes == "triangle" and x != None and y != None:
-            print("Triangle:",0.5 * x * y)
+            print("Area of Triangle:",0.5 * x * y)
         elif shapes == "rectangle" and x != None and y != None:
-            print("Rectangle:",x * y)
+            print("Area of Rectangle:",x * y)
         elif shapes == "square" and x != None:
-            print("Square:",x * x)
+            print("Area of Square:",x * x)
         else:
             print("Invalid input.") 
 
