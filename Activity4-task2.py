@@ -3,7 +3,7 @@ class Calculator:
         self.total=0
         
     def add_numbers(self,*args):
-        total = 0
+        self.total = 0
         for number in args:
             self.total += number
         return self.total
